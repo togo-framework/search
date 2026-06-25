@@ -1,6 +1,6 @@
 # search — documentation
 
-  <img src=".github/assets/togo-mark.svg" alt="togo" height="64" />
+togo search: ParadeDB default + ES/OpenSearch plugins
 
 ## Overview
 
@@ -21,12 +21,11 @@ Set `SEARCH_DRIVER=<provider>` and install a driver (search-algolia, …).
 
 ## Configuration
 
-Environment variables read by this plugin (extracted from the source):
+Environment variables read by this plugin (extracted from the source — see the gateway/provider docs for each value):
 
-| Env var | Notes |
-|---|---|
-| `G` | _see provider docs_ |
-| `SEARCH_DRIVER` | _see provider docs_ |
+| Env var |
+|---|
+| `SEARCH_DRIVER"` |
 
 ## Usage
 
@@ -40,4 +39,4 @@ hits, _ := s.Search(ctx, "posts", "query")
 
 - Marketplace: https://to-go.dev/marketplace
 - Source: https://github.com/togo-framework/search
-- README: ../README.md
+- Full README: ../README.md
